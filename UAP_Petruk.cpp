@@ -10,6 +10,7 @@ int main()
     stack.push(25);
       
     stack.pop();
+    stack.pop();
   
     while (!stack.empty()) 
     {
