@@ -11,6 +11,7 @@ int main()
       
     stack.pop();
     stack.pop();
+    stack.pop();
   
     while (!stack.empty()) 
     {
