@@ -4,7 +4,7 @@
 	Ferisna Yanti Hima 2117051056
 	Firman Ahmad Bayumi 2117051062
 	
-	Tema : "Barang pembelian dalam totebag supermarket"
+	Tema : "Tumpukan Barang pembelian dalam totebag supermarket"
 */
 
 #include <iostream>
