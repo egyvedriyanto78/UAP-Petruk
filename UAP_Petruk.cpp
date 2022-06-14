@@ -14,11 +14,11 @@ using namespace std;
 
 void output(stack <string> stack)
 {
-    cout << "\n\t================================\n";
+    cout << "\n\t============================================\n";
     
     if(stack.empty())
     {
-        cout << "\t\tTotebag kosong !";
+        cout << "\t\t\tTotebag kosong !";
     }
     else
     {
@@ -29,7 +29,7 @@ void output(stack <string> stack)
         }
     }
 
-    cout << "\n\t================================\n";
+    cout << "\n\t============================================\n";
 }
 
 void program()
@@ -70,7 +70,7 @@ void program()
                     getch();
                     break;
             
-            case 3 :
+           case 3 :
                     if(!stack.empty())
                     {
                         cout << "\n" << stack.top() << " telah diambil\n";
