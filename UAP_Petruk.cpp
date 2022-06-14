@@ -14,11 +14,11 @@ using namespace std;
 
 void output(stack <string> stack)
 {
-    cout << "\n================================\n";
+    cout << "\n\t================================\n";
     
     if(stack.empty())
     {
-        cout << "\tTotebag kosong !";
+        cout << "\t\tTotebag kosong !";
     }
     else
     {
@@ -29,7 +29,7 @@ void output(stack <string> stack)
         }
     }
 
-    cout << "\n================================\n";
+    cout << "\n\t================================\n";
 }
 
 void program()
@@ -43,13 +43,13 @@ void program()
         system("cls");
         output(stack);
 
-        cout << "============================================\n"
-		     << "||   [1] Masukkan barang belanjaan        ||\n"
-		     << "||   [2] Total barang belanjaan           ||\n"
-		     << "||   [3] Ambil barang belanjaan           ||\n"
-		     << "||   [4] Keluar program                   ||\n"
-		     << "============================================\n" 
-		     << "Input menu : "; cin >> menu;
+        cout << "\t============================================\n"
+		     << "\t||   [1] Masukkan barang belanjaan        ||\n"
+		     << "\t||   [2] Total barang belanjaan           ||\n"
+		     << "\t||   [3] Ambil barang belanjaan           ||\n"
+		     << "\t||   [4] Keluar program                   ||\n"
+		     << "\t============================================\n" 
+		     << "\n\tInput menu : "; cin >> menu;
         
         cout << endl;
 
