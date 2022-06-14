@@ -1,21 +1,104 @@
-#include <iostream> 
-#include <stack> 
+/*
+	Kelompok :
+	Egy Vedriyanto 2117051035
+	Ferisna Yanti Hima 2117051056
+	Firman Ahmad Bayumi 2117051062
+	
+	Tema : "Barang pembelian dalam totebag supermarket"
+*/
+
+#include <iostream>
+#include <conio.h>
+#include <stack>
 using namespace std;
-int main() 
+
+void output(stack <string> stack)
 {
-    stack <int> stack;
-    stack.push(21);
-    stack.push(22);
-    stack.push(24);
-    stack.push(25);
-      
-    stack.pop();
-    stack.pop();
-    stack.pop();
-  
-    while (!stack.empty()) 
+    cout << "\n================================\n";
+    
+    if(stack.empty())
     {
-        cout << ' ' << stack.top();
-        stack.pop();
+        cout << "\tTotebag kosong !";
+    }
+    else
+    {
+        while(!stack.empty())
+        {
+            cout << "\t" << stack.top() << endl;
+            stack.pop();
+        }
+    }
+
+    cout << "\n================================\n";
+}
+
+void program()
+{
+    stack <string> stack;
+    char totebag[150];
+    int menu;
+
+    while(true)
+    {
+        system("cls");
+        output(stack);
+
+        cout << "============================================\n"
+		     << "||   [1] Masukkan barang belanjaan        ||\n"
+		     << "||   [2] Total barang belanjaan           ||\n"
+		     << "||   [3] Ambil barang belanjaan           ||\n"
+		     << "||   [4] Keluar program                   ||\n"
+		     << "============================================\n" 
+		     << "Input menu : "; cin >> menu;
+        
+        cout << endl;
+
+        switch(menu)
+        {
+            case 1 :
+                    cout << "Barang : ";
+                    cin.ignore(1,'\n');
+                    gets(totebag);
+                    stack.push(totebag);
+
+                    cout << "\n" << totebag << " telah dimasukkan ke dalam totebag\n";
+                    getch ();
+                    break;
+            
+            case 2 :
+                    cout << "Ada " << stack.size() << " barang di dalam totebag" << endl;
+                    getch();
+                    break;
+            
+            case 3 :
+                    if(!stack.empty())
+                    {
+                        cout << "\n" << stack.top() << " telah diambil\n";
+                        stack.pop();
+                    }
+                    else
+                    {
+                        cout << "Totebag kosong !";
+                    }
+                    getch();
+                    break;
+            
+            case 4 :
+                    cout << "Terima Kasih telah menggunakan program ini.";
+                    exit(1);
+                    getch();
+                    break;
+            
+            default :
+                    cout << "Error !";
+                    getch();
+        }
     }
 }
+
+int main()
+{
+    program();
+    return 0;
+}
+
