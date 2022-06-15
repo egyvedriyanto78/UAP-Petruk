@@ -6,7 +6,7 @@
 	
 	Tema : "Tumpukan Barang pembelian dalam totebag supermarket"
 */
-//UAP Pemrograman Terstruktur
+
 #include <iostream>
 #include <conio.h>
 #include <stack>
