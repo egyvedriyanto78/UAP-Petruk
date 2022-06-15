@@ -84,7 +84,7 @@ void program()
                     break;
             
             case 4 :
-                    cout << "Terima Kasih telah menggunakan program ini.";
+                    cout << "Terima Kasih telah menggunakan program ini.\n";
                     exit(1);
                     getch();
                     break;
