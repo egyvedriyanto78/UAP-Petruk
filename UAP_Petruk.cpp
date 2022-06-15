@@ -10,6 +10,7 @@
 #include <iostream>
 #include <conio.h>
 #include <stack>
+
 using namespace std;
 
 void output(stack <string> stack)
